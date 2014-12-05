@@ -64,8 +64,8 @@ table {
 }
 .top-navigation .links {
 	float: right;
-	font-family: 'Roboto', sans-serif;
-	color: #838994;
+	font-family: 'Cabin', sans-serif;
+	color: #422B56;
 	font-size: 1em;
 	margin-top: 1em;
 	-webkit-font-smoothing: antialiased;
@@ -77,8 +77,14 @@ table {
 	margin-top: 1em;
 }
 
-.top-navigation .links li:hover {
+.top-navigation .links li a {
+	text-decoration: none;
+	color: #422B56;
+}
+
+.top-navigation .links li a:hover {
 	 color: #BCA659;
+
 }
 
 .top-navigation img {
@@ -102,6 +108,7 @@ table {
 }
 .gui-blurb h1 {
 	text-align: center;
+	text-transform: uppercase;
 	font-size: 4em;
 /*	color: #422B56;*/
 	margin: 0 auto;
@@ -125,21 +132,22 @@ table {
 .image-text {
 	margin-bottom: 2em;
 	padding: 1em;
+	width: 100%;
 	display: inline-block;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
 
 .image-text img {
 	height: auto;
 	max-width: 300px;
 	margin-right: 1em;
-	border: 2px solid gray;
+	border: 5px solid #E9F1E3;
 	border-radius: 20px;
 }
 
 .block-text {
 	padding: 0;
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 }
 
 .image-text h3,
@@ -167,10 +175,27 @@ table {
 	line-height: 120%;
 }
 
+.image-text p {
+	color: #838994;
+}
+
+.block-text h3 {
+	color: #422B56;
+}
+
+.image-text a {
+	text-decoration: none;
+	color: #422B56;
+}
+
+.image-text a:hover {
+	color: #BCA659;
+}
+
 .content h2 {
 	text-align: left;
-	font-size: 2em;
-	color: black;
+	font-size: 3em;
+	color: #BCA659;
 	margin: 0 auto
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -234,6 +259,23 @@ table {
 .social-icon {
     display: inline-block;
     margin: 0 auto;
-    font-size: 2em;
+    font-size: 1.7em;
     font-color: white;
+}
+
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.clear{
+	clear:both;
+	height:1px;
+}
+.image-text .fl.img{
+	width:350px;
+}
+.image-text .fl.block-text{
+	width: 55%;
 }
